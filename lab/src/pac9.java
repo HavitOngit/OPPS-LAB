@@ -16,9 +16,6 @@ public class pac9 {
 
 }
 
-/**
- * getGCD
- */
 class getGCD {
 
     public static int gcd(int num1, int num2) {

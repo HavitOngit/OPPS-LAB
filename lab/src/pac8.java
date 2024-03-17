@@ -1,18 +1,16 @@
 import java.util.Scanner;
 
 public class pac8 {
-    public static void main(String[] args) throws Exception {
-        Scanner ScannerObj = new Scanner(System.in);
-        System.out.println("Enter Number:");
+    public static void main(String[] args) {
 
-        int UserInput = ScannerObj.nextInt();
-        int i = 2;
-        while (i < UserInput) {
-            if ((UserInput % i) == 0) {
-                System.out.println(i + ",");
+        Scanner sc = new Scanner(System.in);
+        int Num = sc.nextInt();
+        for (int i = 2; i <= Num; i++) {
+            while (Num % i == 0) {
+                System.out.print(i + " ");
+                Num = Num / i;
             }
-            i++;
-
         }
+        sc.close();
     }
 }
